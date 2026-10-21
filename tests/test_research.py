@@ -31,3 +31,18 @@ def test_search_notes_ignores_case():
 
     assert results == ["RAG helps retrieve documents"]
 
+
+def test_search_notes_ranks_best_match_first():
+    notes = [
+        "Python is a programming language",
+        "RAG retrieves relevant documents",
+        "RAG documents help AI systems",
+    ]
+
+    results = search_notes("RAG documents AI", notes)
+
+    assert results == [
+        "RAG documents help AI systems",
+        "RAG retrieves relevant documents",
+    ]
+
