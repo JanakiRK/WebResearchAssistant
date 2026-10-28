@@ -65,3 +65,13 @@ def search_notes(query: str, notes: list[str]) -> list[str]:
     scored_notes.sort(key=lambda item: item[0], reverse=True)
 
     return [note for score, note in scored_notes]
+
+def test_search_notes_does_not_match_partial_words():
+    notes = [
+        "Training improves software skills",
+        "AI helps with research",
+    ]
+
+    results = search_notes("AI", notes)
+
+    assert results == ["AI helps with research"]
