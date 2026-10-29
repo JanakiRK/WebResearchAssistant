@@ -4,3 +4,4 @@
 - **Empty query handling:** Returning an empty list for an empty search query avoids returning irrelevant results.
 - **Progress:** Consistency matters more than the size of each step.
 - **Search relevance:** Ranking results by keyword matches helps users find the most relevant research notes first.
+- Day 2: Cleaned up duplicate search functions and restored the regression test.
