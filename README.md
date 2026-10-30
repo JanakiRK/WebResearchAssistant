@@ -5,3 +5,4 @@
 - **Progress:** Consistency matters more than the size of each step.
 - **Search relevance:** Ranking results by keyword matches helps users find the most relevant research notes first.
 - Day 2: Cleaned up duplicate search functions and restored the regression test.
+- Day 3: Continued learning and maintaining the Web Research Assistant.
